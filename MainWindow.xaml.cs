@@ -24,5 +24,15 @@ namespace ExperimentWithControls
         {
             InitializeComponent();
         }
+
+        private void numberTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void numberTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+        }
     }
 }
