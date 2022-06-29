@@ -7,20 +7,34 @@
         mc:Ignorable="d"
         Title="Experiment With Controls" Height="450" Width="800">
     <Grid>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
             <RowDefinition Height="0.5*" />
         </Grid.RowDefinitions>
+
         <Label Content="Enter a number" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="18" Margin="10,10,0,-1"/>
         <TextBlock x:Name="number" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="#" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="24"/>
         <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Height="23" Margin="10,49,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI" FontSize="18" TextChanged="numberTextBox_TextChanged" PreviewTextInput="numberTextBox_PreviewTextInput"/>
+        <RadioButton Content="1" HorizontalAlignment="Left" Margin="200,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="2" HorizontalAlignment="Left" Margin="231,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="3" HorizontalAlignment="Left" Margin="262,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="4" HorizontalAlignment="Left" Margin="200,68,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="5" HorizontalAlignment="Left" Margin="231,68,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="262,68,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="myListBox" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,10,10">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ListBox>
 
     </Grid>
 </Window>
